@@ -2,5 +2,13 @@
 name = "veriloghex"
 version = "0.1.0"
 edition = "2024"
+license = "MIT OR Apache-2.0"
+readme = "README.md"
+description = "Parse Verilog .hex format"
+repository = "https://github.com/igorlesik/veriloghex"
+
+[features]
+default = ["std"]
+std = []
 
 [dependencies]

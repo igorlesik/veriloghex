@@ -91,7 +91,7 @@ impl fmt::Display for Record {
         match self {
             Record::EndOfFile => write!(f, "EOF"),
             Record::Comment => write!(f, "comment"),
-            Record::NewAddress(addr) => write!(f, "new address: {:#010X}", addr),
+            Record::NewAddress(addr) => write!(f, "new address: {addr:#010X}"),
             Record::Data { addr, value } => {
                 write!(
                     f,
